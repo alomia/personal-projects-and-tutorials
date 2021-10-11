@@ -1,4 +1,4 @@
-# Introduction to C Programming
+# Program control in c
 
 This directory contains simple programs written in C.
 
