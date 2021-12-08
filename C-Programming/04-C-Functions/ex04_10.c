@@ -1,4 +1,4 @@
-/* 04 - C Functions: ex04_07.c
+/* 04 - C Functions: ex04_10.c
    prints a solid square of asterisks whose dimensions are
    specified by the side parameter. */
 
