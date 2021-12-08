@@ -2,7 +2,7 @@
    function that determines if a number is even or odd,
    if it is even it returns 1 if it is not it returns 0 */
 
-#include "stdio.h"
+#include <stdio.h>
 
 int isEven(int number);
 
