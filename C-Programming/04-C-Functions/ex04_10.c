@@ -24,6 +24,8 @@ int main(void)
         }
         
         printf("\nGoodbye come back soon (︡❛ ͜ʖ❛︠)\n");
+
+        return 0;
 }
 
 void squareOfAsterisks(int side)
