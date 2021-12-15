@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+# function - print every text message
 def show_messages(messages):
         """print every text message"""
         for message in messages:
