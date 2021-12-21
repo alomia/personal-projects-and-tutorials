@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # create information about music albums by means of a function
+
+
 def make_album(artist_name, album_title, number_songs = None):
         """stores information about an album in a dictionary and returns that information to the dictionary."""
         music_album = {'artist' : artist_name, 'title' : album_title}
