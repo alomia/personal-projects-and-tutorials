@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#roll dice
+# roll dice
 
 from dice import Dice
 

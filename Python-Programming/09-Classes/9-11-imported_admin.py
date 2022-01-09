@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Imported Admin
+# Imported Admin
 from user import User, Admin
 
 jose = Admin('jose', 'smith', 'smithjose', 'jose_smith123@gmail.com', 'Miami')

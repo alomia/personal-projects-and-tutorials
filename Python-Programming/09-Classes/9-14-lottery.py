@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Lottery
+# Lottery
 
 from random import choice
 
@@ -13,8 +13,8 @@ for count in range(1, 5):
         print(f"We pulled a {value}!")
         winning_ticket.append(value)
 
-print("\nThe final winning ticket is: ",end="")
+print("\nThe final winning ticket is: ", end="")
 
 for i in winning_ticket:
-        print(i,end=" ")
+        print(i, end=" ")
 print()

@@ -1,4 +1,4 @@
-/* 04 - C Functions: ex04_19.c
+/* 04 - C Functions: ex04_20.c
    5.31 Coin Tossing */
 
 #include <stdio.h>

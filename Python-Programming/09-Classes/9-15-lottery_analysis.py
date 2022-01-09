@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Lottery Analysis
+# Lottery Analysis
 from random import choice
 
 def generate_ticket(possibilities = [], ticket = []):
@@ -25,8 +25,8 @@ while my_ticket != winning_ticket:
         winning_ticket = []
         generate_ticket(possibilities, winning_ticket)
 
-print(f"My ticket: ",end="")
+print(f"My ticket: ", end="")
 print_ticket(my_ticket)
-print(f"Winning ticket: ",end="")
+print(f"Winning ticket: ", end="")
 print_ticket(winning_ticket)
 print(f"It took {attempts} tries to win.")
