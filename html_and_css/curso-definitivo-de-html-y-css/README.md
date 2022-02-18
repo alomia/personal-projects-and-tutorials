@@ -8,4 +8,4 @@ This directory contains examples and exercises performed during the course.
 - Multimedia tags
 - Forms
 
-![image](/img/image.png)
+![image](img/image.png)
