@@ -8,4 +8,4 @@ This directory contains examples and exercises performed during the course.
 - Multimedia tags
 - Forms
 
-![image](/home/alomia/Escritorio/Proyectos/personal-projects-and-tutorials/html_and_css/img/image.png)
+![image](/home/alomia/Escritorio/Proyectos/personal-projects-and-tutorials/html_and_css/curso-definitivo-de-html-y-css/img/image.png)
