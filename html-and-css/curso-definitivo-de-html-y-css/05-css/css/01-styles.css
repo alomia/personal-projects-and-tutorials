@@ -1,0 +1,13 @@
+p {
+    font-size: 30px;
+}
+
+/* class */
+.paragraph {
+    color: brown;
+}
+
+/* ID */
+#paragraphID {
+    color:darkslategrey;
+}
