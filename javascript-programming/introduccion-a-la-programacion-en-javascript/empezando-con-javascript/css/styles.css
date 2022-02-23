@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-content {
+    margin-top: 25%;
+    /* FLEX */
+    display: flex;
+    justify-content: center;
+}
+
+.section-content__article .title {
+    font-family: sans-serif;
+}
