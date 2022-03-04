@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    border: 2px black dotted;
+    display: inline-block;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: brown;
+}
+
+#two {
+    background-color: orange;
+}
