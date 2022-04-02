@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batatabit</title>
+    <link rel="icon" href="./assets/icons/batatabit-icon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles/styles.css">
-<link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 930px)">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 930px)">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -27,69 +29,151 @@
                 <h2>Visibilizamos todas las tasas de cambio.</h2>
                 <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             </div>
-            <section class="main-tables-container">
-                <div class="main-currency-table">
-                    <p class="currency-table--title">Monedas</p>
-                    <div class="currency-tablet--contaianer">
-                        <table>
-                            <tr>
-                                <td class="table__top-left">Bitcoin</td>
-                                <td class="table__top-right table__right">$1.96 <span class="down"></span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Ethereum</td>
-                                <td class="table__right">$0.07 <span class="up"></span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Ripple</td>
-                                <td class="table__right">$2.15 <span class="down"></span></td>
-                            </tr>
-
-                            <tr>
-                                <td class="table__bottom-left">Stellar</td>
-                                <td class="table__bottom-right
-                                table__right">$4.96 <span class="down"></span></td>
-                            </tr>
-                        </table>
+            <section class="main-tables-container tables-visible-slider">
+                <div id="carouselTablesDark" class="carousel carousel-dark slide w-100" data-bs-touch="true" data-bs-interval="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="main-currency-table">
+                                <p class="currency-table--title">Monedas</p>
+                                <div class="currency-tablet--contaianer">
+                                    <table>
+                                        <tr>
+                                            <td class="table__top-left">Bitcoin</td>
+                                            <td class="table__top-right table__right">$1.96 <span class="down"></span></td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td>Ethereum</td>
+                                            <td class="table__right">$0.07 <span class="up"></span></td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td>Ripple</td>
+                                            <td class="table__right">$2.15 <span class="down"></span></td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td class="table__bottom-left">Stellar</td>
+                                            <td class="table__bottom-right
+                                            table__right">$4.96 <span class="down"></span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="currency-table--date">
+                                    <p><b>Actualizado: </b>19 Julio 23:45</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="main-currency-table">
+                                <p class="currency-table--title" id="currency-tablet--title-blue">Comisiones</p>
+                                <div class="currency-tablet--contaianer">
+                                    <table>
+                                        <tr>
+                                            <td class="table__top-left">Bitrade</td>
+                                            <td class="table__top-right table__right">$12.96</td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td>Bitpreco</td>
+                                            <td class="table__right">$13.07</td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td>Novadax</td>
+                                            <td class="table__right">$13.15</td>
+                                        </tr>
+            
+                                        <tr>
+                                            <td class="table__bottom-left">Coinext</td>
+                                            <td class="table__bottom-right
+                                            table__right">$14.96</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="currency-table--date" id="currency-tablet--date-blue">
+                                    <p><b>Actualizado: </b>19 Julio 23:48</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="currency-table--date">
-                        <p><b>Actualizado: </b>19 Julio 23:45</p>
-                    </div>
-                </div>
-
-                <div class="main-currency-table">
-                    <p class="currency-table--title" id="currency-tablet--title-blue">Comisiones</p>
-                    <div class="currency-tablet--contaianer">
-                        <table>
-                            <tr>
-                                <td class="table__top-left">Bitrade</td>
-                                <td class="table__top-right table__right">$12.96</td>
-                            </tr>
-
-                            <tr>
-                                <td>Bitpreco</td>
-                                <td class="table__right">$13.07</td>
-                            </tr>
-
-                            <tr>
-                                <td>Novadax</td>
-                                <td class="table__right">$13.15</td>
-                            </tr>
-
-                            <tr>
-                                <td class="table__bottom-left">Coinext</td>
-                                <td class="table__bottom-right
-                                table__right">$14.96</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="currency-table--date" id="currency-tablet--date-blue">
-                        <p><b>Actualizado: </b>19 Julio 23:48</p>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTablesDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTablesDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
+            
+            <section class="main-tables-container tables-visible-row">
+                <div class="card-group">
+                    <div class="main-currency-table">
+                        <p class="currency-table--title">Monedas</p>
+                        <div class="currency-tablet--contaianer">
+                            <table>
+                                <tr>
+                                    <td class="table__top-left">Bitcoin</td>
+                                    <td class="table__top-right table__right">$1.96 <span class="down"></span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Ethereum</td>
+                                    <td class="table__right">$0.07 <span class="up"></span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Ripple</td>
+                                    <td class="table__right">$2.15 <span class="down"></span></td>
+                                </tr>
+    
+                                <tr>
+                                    <td class="table__bottom-left">Stellar</td>
+                                    <td class="table__bottom-right
+                                    table__right">$4.96 <span class="down"></span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="currency-table--date">
+                            <p><b>Actualizado: </b>19 Julio 23:45</p>
+                        </div>
+                    </div>
+
+                    <div class="main-currency-table">
+                        <p class="currency-table--title" id="currency-tablet--title-blue">Comisiones</p>
+                        <div class="currency-tablet--contaianer">
+                            <table>
+                                <tr>
+                                    <td class="table__top-left">Bitrade</td>
+                                    <td class="table__top-right table__right">$12.96</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Bitpreco</td>
+                                    <td class="table__right">$13.07</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>Novadax</td>
+                                    <td class="table__right">$13.15</td>
+                                </tr>
+    
+                                <tr>
+                                    <td class="table__bottom-left">Coinext</td>
+                                    <td class="table__bottom-right
+                                    table__right">$14.96</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="currency-table--date" id="currency-tablet--date-blue">
+                            <p><b>Actualizado: </b>19 Julio 23:48</p>
+                        </div>
+                    </div>
+                  </div>
+            </section>
+
         </section>
         <section class="main-product-detail">
             <span class="product-detail--batata-logo"></span>
@@ -125,16 +209,63 @@
                 </article>
             </section>
         </section>
+        
         <section class="bitcoin-img-container">
             <h2>Conócelo hoy.</h2>
         </section>
-        <section id="plans" class="main-plans-container">
+        
+        <section id="plans" class="main-plans-container plans-visible-slider">
             <div class="plans-title">
                 <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                 <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
+            <div id="carouselCardsDark" class="carousel carousel-dark slide plans-container--slider" data-bs-touch="true" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <article class="plans-container--card">
+                        <p class="recommended">Recomendado</p>
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title">Pago Anual</h3>
+                            <p class="plan-card--price"><span>$</span> 99</p>
+                            <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="carousel-item">
+                    <article class="plans-container--card">
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title">Pago Anual</h3>
+                            <p class="plan-card--price"><span>$</span> 99</p>
+                            <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                    </div>
+                    <div class="carousel-item">
+                    <article class="plans-container--card">
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title">Pago Anual</h3>
+                            <p class="plan-card--price"><span>$</span> 99</p>
+                            <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCardsDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCardsDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
 
-            <section class="plans-container--slider">
+        <section id="plans" class="main-plans-container plans-visible-row">
+            <div class="card-group">
                 <article class="plans-container--card">
                     <div class="plan-info-container">
                         <h3 class="plan-card--title">Pago Anual</h3>
@@ -143,7 +274,6 @@
                         <button class="plan-card--ca">Escoger este <span></span></button>
                     </div>
                 </article>
-
                 <article class="plans-container--card">
                     <p class="recommended">Recomendado</p>
                     <div class="plan-info-container">
@@ -153,7 +283,6 @@
                         <button class="plan-card--ca">Escoger este <span></span></button>
                     </div>
                 </article>
-
                 <article class="plans-container--card">
                     <div class="plan-info-container">
                         <h3 class="plan-card--title">Pago Anual</h3>
@@ -162,10 +291,11 @@
                         <button class="plan-card--ca">Escoger este <span></span></button>
                     </div>
                 </article>
-
-            </section>
+            </div>
         </section>
+
     </main>
+
     <footer>
         <section class="left">
             <ul>
@@ -179,5 +309,6 @@
             <img src="./assets/imgs/logo-footer.svg" alt="Logo Batabit 2022">
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
