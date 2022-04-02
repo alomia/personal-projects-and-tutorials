@@ -157,13 +157,21 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+    height: 380px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 
 .main-currency-table {
+    scroll-snap-align: center;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 40px;
 }
 
 .main-currency-table .currency-table--title {
@@ -180,6 +188,14 @@ main {
     margin: 0 auto;
     margin-bottom: 15px;
     
+}
+
+#currency-tablet--title-blue {
+    color: var(--secondary-blue);
+}
+
+#currency-tablet--date-blue {
+    background-color: var(--soft-blue);
 }
 
 .currency-tablet--contaianer {
@@ -394,7 +410,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url("../assets/imgs/bitcoin-woman.png");
+    background-image: url("../assets/imgs/bitcoin-woman.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -446,7 +462,7 @@ main {
     display: flex;
     height: 316px;
     overflow-x: scroll;
-    overscroll-behavior-x: contai;
+    overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
 
@@ -570,4 +586,9 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
+}
+
+.right img {
+    width: 64px;
+    height: 50px;
 }
