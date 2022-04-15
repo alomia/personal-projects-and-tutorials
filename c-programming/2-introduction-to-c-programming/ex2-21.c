@@ -1,5 +1,5 @@
 // Chapter 2 - Introduction to C Programming
-// Exercise 2.20 - Diameter, Circumference and Area of a Circle
+// Exercise 2.21 - Diameter, Circumference and Area of a Circle
 #include <stdio.h>
 
 int main(void)
