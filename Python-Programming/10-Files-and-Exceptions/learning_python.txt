@@ -1,6 +1,0 @@
-In Python you can make conditionals.
-In Python you can create lists.
-In Python you can print to screen.
-In Python you can create functions.
-In Python you can work with object-oriented programming.
-In Python you can work with text files.
