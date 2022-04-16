@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    int firstNumber, secondNumber = 0;
+    int firstNumber = 0, secondNumber = 0;
     
     printf("%s", "Enter Two integers: ");
     scanf("%d%d", &firstNumber, &secondNumber);
