@@ -4,12 +4,12 @@
 
 int main(void)
 {
-    int firstNumber, secondNumber, thirdNumber = 0;
+    int firstNumber = 0, secondNumber = 0, thirdNumber = 0;
 
     printf("%s", "Enter three different integers: ");
     scanf("%d%d%d", &firstNumber, &secondNumber, &thirdNumber);
 
-    int smallest, largest, middle = 0;
+    int smallest = 0, largest = 0, middle = 0;
 
     if (firstNumber > secondNumber && firstNumber > thirdNumber)
     {
