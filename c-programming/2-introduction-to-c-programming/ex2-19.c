@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    int firstNumber, secondNumber, thirdNumber = 0;
+    int firstNumber = 0, secondNumber = 0, thirdNumber = 0;
 
     printf("%s", "Enter three different integers: ");
     scanf("%d%d%d", &firstNumber, &secondNumber, &thirdNumber);
@@ -12,7 +12,7 @@ int main(void)
     int sum = firstNumber + secondNumber + thirdNumber;
     int average = (firstNumber + secondNumber + thirdNumber) / 3;
     int product = firstNumber * secondNumber * thirdNumber;
-    int smallest, largest = 0;
+    int smallest = 0, largest = 0;
 
     if (firstNumber < secondNumber && firstNumber < thirdNumber)
     {
