@@ -9,7 +9,7 @@ int main(void)
 
     printf("%s ", "Enter the gallons used (-1 to end):");
     scanf("%f", &gallonsUsed);
-    
+
     while (gallonsUsed != -1)
     {
         printf("%s ", "Enter the miles driven:");
