@@ -11,7 +11,7 @@ int main(void)
     puts("Applying the predecrement");
     printf("value of the variable after the Predecrement %d\n", --number);
     printf("Variable value now: %d", number);
-    
+
     number = 5;
     puts("\n\nPostdecrementing");
     printf("Variable value: %d\n", number);
