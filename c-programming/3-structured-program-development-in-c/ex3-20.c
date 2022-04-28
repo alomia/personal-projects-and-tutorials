@@ -15,8 +15,8 @@ int main(void)
         printf("%s ", "Enter hourly rate of the worker ($00.00):");
         scanf("%f", &hourlyRate);
 
-        if ( hoursWorked > 40 )
-        { 
+        if (hoursWorked > 40)
+        {
             salary = 40 * hourlyRate;
 
             for (unsigned int overtime = 40; overtime < hoursWorked; overtime++)
@@ -24,7 +24,8 @@ int main(void)
                 salary += (hourlyRate + hourlyRate / 2);
             }
         }
-        else {
+        else
+        {
             salary = hoursWorked * hourlyRate;
         }
 
@@ -32,5 +33,5 @@ int main(void)
 
         printf("\n\n%s ", "Enter # of hours worked (-1 to end):");
         scanf("%d", &hoursWorked);
-    }   
+    }
 }
