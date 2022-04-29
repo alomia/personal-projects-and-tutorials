@@ -11,7 +11,7 @@ int main(void)
 
     while (number != -1)
     {
-        if (number < 99 || number < 999 || number < 9999 || number > 99999)
+        if (number < 9999 || number > 99999)
         {
             puts("Please enter a valid value.");
             printf("\n%s ", "Enter a five-digit integer:");
