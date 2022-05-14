@@ -8,7 +8,7 @@ int main(void)
     double credit_limit = 0, current_balance = 0;
 
     printf("%s", "Account number(-1 to end): ");
-    scanf("%d", &account_number);
+    scanf("%u", &account_number);
 
     while (account_number != -1)
     {
