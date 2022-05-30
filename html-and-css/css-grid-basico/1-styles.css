@@ -1,0 +1,74 @@
+/* Variables
+========================================*/
+:root {
+  --asparagus: #8ab17d;
+  --burnt-sienna: #e76f51;
+  --charcoal: #264653;
+  --maize-crayola: #e9c46a;
+  --persian-green: #2a9d8f;
+  --sandy-brown: #f4a261;
+  --white: #ffffff;
+}
+
+/* General styles
+========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+/* Container styles
+========================================*/
+.container {
+  height: 100vh;
+
+  display: grid;
+  gap: 20px;
+  place-content: center;
+  grid-auto-rows: 200px;
+  grid-template-columns: 200px 200px;
+}
+
+/* Container items styles
+========================================*/
+.item {
+  font-size: 4rem;
+  color: var(--white);
+
+  display: grid;
+  place-content: end;
+}
+
+/*internal spacing
+*/
+.item span {
+  padding: 20px;
+}
+
+/*colores
+*/
+.item-1,
+.item-4 span {
+  background-color: var(--burnt-sienna);
+}
+
+.item-2,
+.item-3 span {
+  background-color: var(--persian-green);
+}
+
+.item-3,
+.item-2 span {
+  background-color: var(--charcoal);
+}
+
+.item-4,
+.item-1 span {
+  background-color: var(--maize-crayola);
+}
