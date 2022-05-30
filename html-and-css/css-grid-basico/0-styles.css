@@ -1,0 +1,86 @@
+/* Variables
+========================================*/
+:root {
+  --asparagus: #8ab17d;
+  --burnt-sienna: #e76f51;
+  --charcoal: #264653;
+  --maize-crayola: #e9c46a;
+  --persian-green: #2a9d8f;
+  --sandy-brown: #f4a261;
+  --white: #ffffff;
+}
+
+/* General styles
+========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+
+/* Container styles
+========================================*/
+.container {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
+
+/* Container items styles
+========================================*/
+.item {
+  font-size: 7rem;
+  font-weight: bold;
+  color: var(--white);
+
+  display: grid;
+  align-content: end;
+  justify-content: end;
+}
+
+/*internal spacing
+*/
+.item span {
+  padding: 10px;
+}
+
+/*colores
+*/
+.item-1,
+.item-6 span {
+  background-color: var(--charcoal);
+}
+
+.item-2,
+.item-5 span {
+  background-color: var(--persian-green);
+}
+
+.item-3,
+.item-4 span {
+  background-color: var(--asparagus);
+}
+
+.item-4,
+.item-3 span {
+  background-color: var(--maize-crayola);
+}
+
+.item-5,
+.item-2 span {
+  background-color: var(--sandy-brown);
+}
+
+.item-6,
+.item-1 span {
+  background-color: var(--burnt-sienna);
+}
