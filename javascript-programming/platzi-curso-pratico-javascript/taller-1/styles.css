@@ -1,0 +1,194 @@
+/* Variables
+========================================*/
+:root {
+  /*color*/
+  --red-salsa: #ed4749;
+  --light-coral: #ef6e6b;
+  --white: #ffffff;
+
+  /*text color*/
+  --form-text-color: var(--white);
+  --form-text-color-sed: var(--red-salsa);
+
+  /*background color*/
+  --main-background-color: var(--light-coral);
+  --form-background-color: var(--red-salsa);
+}
+
+/* General styles
+========================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto Mono", monospace;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Main styles
+========================================*/
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-background-color);
+
+  /*grid*/
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Form styles
+========================================*/
+form {
+  width: 400px;
+  height: 380px;
+  border-radius: 10px;
+  background-color: var(--form-background-color);
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.5);
+
+  /*grid*/
+  display: grid;
+  grid-template-columns: 30px 340px 30px;
+  grid-template-rows: repeat(10, minmax(30px, auto));
+}
+
+h2,
+.contenedor-input,
+.contenedor-button {
+  grid-column: 2;
+}
+
+/*titulo*/
+h2 {
+  color: var(--white);
+  grid-row: 2;
+}
+
+/*input*/
+.contenedor-input {
+  grid-row: 5;
+}
+
+/*icon*/
+.material-symbols-outlined {
+  color: var(--white);
+}
+
+.contenedor-input {
+  border-bottom: 1px solid var(--light-coral);
+
+  display: grid;
+  grid-template-columns: 30px 300px;
+  gap: 10px;
+}
+
+input,
+input::placeholder {
+  color: var(--form-text-color);
+  font-size: 1.5rem;
+}
+
+input {
+  border: none;
+  background-color: var(--form-background-color);
+
+  grid-column: 2;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*botones*/
+.contenedor-button {
+  grid-row: 7;
+  justify-self: center;
+}
+
+
+button {
+  /*general*/
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: var(--form-text-color-sed);
+  margin-bottom: 10px;
+
+  /*font*/
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  /*grid*/
+  grid-column: 2;
+  grid-row: 7;
+  justify-self: center;
+}
+
+button:hover {
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 1s;
+}
+
+p {
+  font-size: 3rem;
+  color: var(--form-text-color);
+
+  /*grid*/
+  grid-column: 2;
+  grid-row: 9;
+  justify-self: center;
+}
+
+
+/*Triangulo*/
+.triangulo-inputs {
+  grid-column: 2;
+  grid-row: 5;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.triangulo-inputs .contenedor-input:nth-child(1),
+.triangulo-inputs .contenedor-input:nth-child(1) input {
+  width: 45%;
+  
+}
+
+.triangulo-inputs .contenedor-input:nth-child(2),
+.triangulo-inputs .contenedor-input:nth-child(2) input {
+  width: 45%;
+}
+
+.triangulo-inputs .contenedor-input:nth-child(3),
+.triangulo-inputs .contenedor-input:nth-child(3) input {
+  width: 45%;
+}
+
+.triangulo-inputs .contenedor-input:nth-child(4),
+.triangulo-inputs .contenedor-input:nth-child(4) input {
+  width: 45%;
+}
+
+/* bones del fomulario circulo */
+
+#formCirculo .contenedor-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
