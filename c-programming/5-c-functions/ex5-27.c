@@ -1,7 +1,6 @@
 // Chapter 5 - C Functions
 // Exercise 5.27 - Prime Numbers
 #include <stdio.h>
-#include <time.h>
 
 int isPrime(unsigned int number);
 
