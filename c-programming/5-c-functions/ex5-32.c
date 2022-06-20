@@ -1,5 +1,5 @@
 // Chapter 5 - C Functions
-// Exercise 5.31 - Guess the Number
+// Exercise 5.32 - Guess the Number
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
