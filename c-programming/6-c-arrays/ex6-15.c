@@ -1,7 +1,7 @@
 // Chapter 6 - C Arrays
 // Exercise 6.15 - Duplicate Elimination
 #include <stdio.h>
-#define SIZE 10
+#define SIZE 20
 
 int duplicate(int array[], size_t size, int number);
 
