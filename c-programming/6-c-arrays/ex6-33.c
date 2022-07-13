@@ -37,7 +37,7 @@ size_t binarySearch(const int arr[], int searchKey, size_t low, size_t hight)
         }
         else if (searchKey < arr[middle])
         {
-            hight = middle -1;
+            hight = middle - 1;
         }
         else
         {
@@ -49,5 +49,5 @@ size_t binarySearch(const int arr[], int searchKey, size_t low, size_t hight)
     else
     {
         return -1;
-    } 
+    }
 }
